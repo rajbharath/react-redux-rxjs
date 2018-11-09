@@ -1,0 +1,31 @@
+{
+  "name": "react-redux-rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "clear": "rm -rf build/* && rm public/bundle.js",
+    "transform": "webpack --mode=development --config=webpack.config.js",
+    "build": "yarn clear && yarn transform",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "react": "^16.6.1",
+    "react-dom": "latest",
+    "redux": "latest",
+    "rxjs": "latest"
+  },
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "latest",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
