@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "clear": "rm -rf build/* && rm public/bundle.js",
-    "transform": "webpack --mode=development --config=webpack.config.js",
+    "dev": "yarn clear && webpack-dev-server --mode=development --config=webpack.config.js",
+    "transform": "webpack --mode=production --config=webpack.config.js",
     "build": "yarn clear && yarn transform",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +18,8 @@
     "react": "^16.6.1",
     "react-dom": "latest",
     "redux": "latest",
-    "rxjs": "latest"
+    "rxjs": "latest",
+    "webpack-dev-server": "^3.1.10"
   },
   "devDependencies": {
     "@babel/cli": "latest",
