@@ -19,7 +19,7 @@
     "react-dom": "latest",
     "react-redux": "^5.1.0",
     "redux": "^4.0.1",
-    "rxjs": "latest",
+    "rxjs": "^6.3.3",
     "webpack-dev-server": "^3.1.10"
   },
   "devDependencies": {
