@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/App';
+import { ConnectedRouter as Router } from 'react-router-redux';
+import createRoutes from './routes.jsx';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import counterReducer from './reducers/counter';
@@ -23,7 +25,11 @@ const evenCounterSubscription = evenCounter$.subscribe((counter) => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <div>
+        {createRoutes()}
+      </div>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
